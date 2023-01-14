@@ -447,7 +447,9 @@ img{
     grid-gap: 57px;
 }
 .top-card {
-    padding-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+
 }
 .top-card-pic {
     position: relative;
@@ -493,10 +495,11 @@ img{
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 43px;
+    margin-bottom: 31px;
     color: #102746;
 }
 .top-card-more {
+    width: 118px;
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
@@ -504,6 +507,7 @@ img{
     padding: 12px 19px;
     background-color: #006DFE;
     color: #FFFFFF;
+    margin: auto 0 0 0;
 }
 .top-card-more:hover, .top-card-more:focus, .top-card-more:active {
     background-color:#084697;
