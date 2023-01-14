@@ -326,6 +326,10 @@ img{
 
 .places_card{
     position: relative;
+    overflow: hidden;
+}
+.places_card:hover .places_card-pic {
+    transform: scale(1.1);
 }
 
 .places_card::after{
@@ -354,12 +358,28 @@ img{
 .places_card_size_lg{
     grid-column: span 3;
 }
-
+.places_card_size_sm {
+    grid-column: span 2;
+}
 .places_card-pic{
     width: 100%;
+    transition: 0.25s all;
+}
+.places_card-pic_size_lg {
     height: 350px;
     object-fit: cover;
 }
-
+.places_card-pic_size_sm {
+    height: 280px;
+    object-fit: cover;
+}
+.places_card-link {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
 
 /* Places styles and */
