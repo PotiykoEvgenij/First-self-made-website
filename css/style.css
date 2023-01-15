@@ -438,7 +438,7 @@ img{
     background: url(../img/svg/arrow-right-ico.svg) no-repeat right center;
 }
 
-/* Tours styles and */
+/* Tours styles end */
 
 /* Top styles start */
 
@@ -520,4 +520,24 @@ img{
     background-color:#084697;
 }
 
-/* Top styles and */
+/* Top styles end */
+/* Video style start */
+.video {
+    width: 100%;
+}
+.video-wrapper {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.video-item {
+    padding-top: 56.25%;
+}
+.video-element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* Video style end */
