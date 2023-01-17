@@ -353,7 +353,8 @@ img{
 .places_cards{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-gap: 10px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
     margin-bottom: 130px;
 }
 
@@ -425,7 +426,8 @@ img{
 .tours-tour {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0 108px;
+    grid-column-gap: 108px;
+    grid-row-gap: 108px;
     align-items: center;
     margin-bottom: 77px;
 }
@@ -445,7 +447,7 @@ img{
     line-height: 24px;
     color: #102746;
     margin-bottom: 58px;
-    width: 519px;
+    max-width: 519px;
 }
 .tour-more {
     display: inline-block;
@@ -475,13 +477,14 @@ img{
 }
 .top-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 57px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 57px;
+    grid-row-gap: 57px;
 }
 .top-card {
     display: flex;
     flex-direction: column;
-
+    grid-column: span 2;
 }
 .top-card-pic {
     position: relative;
@@ -603,6 +606,58 @@ img{
 /* Footer styles and */
 
 /* Media start */
+@media screen and (max-width: 960px) {
+    .search-form_field {
+        margin-bottom: 25px;
+    }
+    .benefits {
+        margin-bottom: 75px;
+    }
+    .benefits_cards {
+        padding: 0 15px;
+        grid-column-gap: 35px;
+    }
+    .benefits_card {
+        margin-bottom: 60px;
+    }
+    .benefits_title {
+        padding: 55px 15px;
+    }
+    .benefits_wrap {
+        box-shadow: none;
+    }
+    .places_card_size_lg {
+        grid-column: span 6;
+    }
+    .places_card_size_sm {
+        grid-column: span 6;
+    }
+    .tours-tour {
+        grid-column-gap: 35px;
+    }
+    .tour-info {
+        margin-left: 0;
+    }
+    .tour-title {
+        margin-bottom: 15px;
+    }
+    .tour-desc {
+        margin-bottom: 15px;
+    }
+    .top-cards {
+        grid-column-gap: 25px;
+        grid-row-gap: 55px;
+    }
+    .top-card {
+        grid-column: span 3;
+    }
+    .top-card-pic {
+        margin-bottom: 25px;
+    }
+    .footer {
+        padding: 60px 0;
+    }
+}
 
 @media screen and (max-width:767px) {
     .header-burger {
